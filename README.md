@@ -12,16 +12,16 @@ There are **frontend** and **backend** folder project. Enter to the each directo
  1. Enter to backend directory: `cd backend`
  2. Create `.env` file. Just copy paste from file `.env.example`
  3. Complete the fields to match yout environtment configuration: 
+PORT=3001  
+POSTGRESQLDB_HOST=localhost  
+POSTGRESQLDB_USER=  
+POSTGRESQLDB_ROOT_PASSWORD=  
+POSTGRESQLDB_DATABASE=ecommerce_db  
+POSTGRESQLDB_LOCAL_PORT=5432  
+POSTGRESQLDB_DOCKER_PORT=5432  
+NODE_LOCAL_PORT=80  
+NODE_DOCKER_PORT=3001  
 
-> 	PORT=3001 	
-> POSTGRESQLDB_HOST=localhost 	
-> POSTGRESQLDB_USER=
-> 	POSTGRESQLDB_ROOT_PASSWORD=
-> POSTGRESQLDB_DATABASE=ecommerce_db
-> 	POSTGRESQLDB_LOCAL_PORT=5432
-> POSTGRESQLDB_DOCKER_PORT=5432
-> 	NODE_LOCAL_PORT=80
-> NODE_DOCKER_PORT=3001
 
 Just skip the `DOCKER`  related variable. Make sure you have set the variable environtment corectly.
  5. Install dependencies: `npm install`
