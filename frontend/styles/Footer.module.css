@@ -1,0 +1,22 @@
+.footer {
+    color: white;
+    background: linear-gradient(90deg, #707070 0%, #474747 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__left {
+    margin-right: auto;
+  }
+  .footer a {
+    color: white;
+  }
+  .footer p {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  

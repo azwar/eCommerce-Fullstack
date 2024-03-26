@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "build",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": false
+  },
+  "include": [
+    "*.ts",
+    "src/**/*.ts",
+    "test/*.spec.ts"
+  ]
+}
