@@ -4,15 +4,10 @@ import {
   BeforeUpdate,
   Column,
   Entity,
-  JoinTable,
-  ManyToMany,
   OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import {ZBaseEntity} from '../base/ZBaseEntity';
-import {IsInRange} from '../helpers/database/decorators';
-import {AppKind} from '../helpers/enums/AppKind';
-import {User} from './User';
 import {Length} from 'class-validator';
 import {OrderItem} from './OrderItem';
 
