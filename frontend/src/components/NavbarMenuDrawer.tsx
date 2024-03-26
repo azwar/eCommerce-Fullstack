@@ -2,18 +2,18 @@
 
 import { useDrawerStore } from "@/state/store";
 
-export default function NavbarMenu() {
+export default function NavbarMenuDrawer() {
 
   return (
-    <nav className="hidden md:flex w-full justify-end dark:bg-gray-900">
-      <div className="mr-10 p-4">
+    <nav className="flex w-full dark:bg-gray-900">
+      <div className="flex p-2 w-full">
         {/* Big screen */}
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div className="flex w-full" id="navbar-default">
+          <ul className="w-full md:p-0 border rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
                 href="/"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                className="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
               >
                 Home

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Drawer from "@/components/DrawerMenu";
+import NavbarMenuDrawer from "@/components/NavbarMenuDrawer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({ children, }: Readonly<{children: React.Reac
           <main className="mx-auto h-full" style={{maxWidth: '900px'}}>{children}</main>
           <Footer />
           <Drawer>
-            <div>Tes</div>
+            <NavbarMenuDrawer />
           </Drawer>
         </div>
       </body>
