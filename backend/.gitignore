@@ -132,3 +132,4 @@ dist
 # My Ignore
 build
 .DS_Store
+.vercel
