@@ -16,6 +16,7 @@ export const dataSource = new DataSource({
   database: process.env.POSTGRESQLDB_DATABASE,
   synchronize: true,
   logging: false,
+  ssl: true,
   entities: [Product, User, OrderItem, Order],
   subscribers: [],
   migrations: [],
