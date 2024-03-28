@@ -33,7 +33,7 @@ export default function ItemProduct({ data }: { data: IProductItem }): React.JSX
           {data.title}
         </h2> */}
           <span className="text-lg text-gray-800">${point_price}.00</span>
-          <div className="flex text-sm justify-center items-center">
+          <div className="flex text-sm justify-start md:justify-center items-center pb-1 md:pb-0">
             <p className="text-center text-gray-800">by {writer}</p>
           </div>
           <div className="fle flex-row">
