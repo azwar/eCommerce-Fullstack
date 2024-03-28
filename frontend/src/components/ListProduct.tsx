@@ -19,7 +19,7 @@ export default function ListProduct(): React.JSX.Element {
         next={fetchMoreData}
         hasMore={list.length < total}
         scrollThreshold={0.8}
-        loader={isLoading && <p>Loading...</p>}
+        loader={<Loading loading={isLoading} />}
         endMessage={<NoMoreData listLength={list.length}/>}
       >
         <div className="grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-2 w-full">
@@ -32,4 +32,8 @@ export default function ListProduct(): React.JSX.Element {
 
 const NoMoreData = ({listLength} : {listLength: number}) => (
   (listLength > 0) ? <p className="py-5">No more data to load.</p> : <></>
+)
+
+const Loading = ({loading: isLoading}: {loading: boolean}) => (
+  <p className="py-5 text-primary">Loading...</p> 
 )
