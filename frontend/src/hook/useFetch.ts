@@ -2,8 +2,7 @@ import { IProductItem } from '@/components/ItemProduct';
 import { useState, useEffect } from 'react';
 
 function useFetch(newPage: number) {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-  const url = `${apiUrl}/product?page=${newPage}`;
+  const url = `/product?offset=${newPage}`;
   const [total, setTotal] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [list, setList] = useState<IProductItem[]>([]);
@@ -15,10 +14,6 @@ function useFetch(newPage: number) {
       setError(null);
   
       try {
-        if (list.length > 0 && newPage === 1) {
-          return;
-        }
-
         if (!isLoading) {
           setIsLoading(true);
 

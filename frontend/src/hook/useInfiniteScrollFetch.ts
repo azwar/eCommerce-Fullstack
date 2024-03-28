@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import useFetch from './useFetch';
 
 function useInfiniteScrollFetch() {
-  const [newPage, setNewPage] = useState<number>(1);
+  const [newPage, setNewPage] = useState<number>(0);
   const { list, isLoading, error, total, page } = useFetch(newPage);
 
   const fetchMoreData = () => {
