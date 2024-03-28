@@ -4,57 +4,6 @@ import ItemProduct, { IProductItem } from "./ItemProduct"
 interface IExtraSale {
 }
 
-export const sampleData: IProductItem[] = [
-  {
-    id: 1,
-    title: "Arduino Projects 2023",
-    writer: "John Doe",
-    image: "default",
-    price_point: 10,
-    tag: ["micro_controller", "electro", "robotic"],
-  },
-  {
-    id: 2,
-    title: "Arduino Projects 2023",
-    writer: "John Doe",
-    image: "default",
-    price_point: 10,
-    tag: ["micro_controller", "electro", "robotic"],
-  },
-  {
-    id: 3,
-    title: "Arduino Projects 2023",
-    writer: "John Doe",
-    image: "default",
-    price_point: 10,
-    tag: ["micro_controller", "electro", "robotic"],
-  },
-  {
-    id: 4,
-    title: "Arduino Projects 2023",
-    writer: "John Doe",
-    image: "default",
-    price_point: 10,
-    tag: ["micro_controller", "electro", "robotic"],
-  },
-  {
-    id: 5,
-    title: "Arduino Projects 2023",
-    writer: "John Doe",
-    image: "default",
-    price_point: 10,
-    tag: ["micro_controller", "electro", "robotic"],
-  },
-  {
-    id: 6,
-    title: "Arduino Projects 2023",
-    writer: "John Doe",
-    image: "default",
-    price_point: 10,
-    tag: ["micro_controller", "electro", "robotic"],
-  }
-]
-
 export default function ExtraSale({ } :IExtraSale): React.JSX.Element {
   return (
     <div className="card w-full bg-primary text-primary-content p-1 rounded-lg">
