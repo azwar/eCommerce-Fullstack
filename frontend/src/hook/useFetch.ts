@@ -2,7 +2,7 @@ import { IProductItem } from '@/components/ItemProduct';
 import { useState, useEffect } from 'react';
 
 function useFetch(newPage: number) {
-  const url = `/product?offset=${newPage}`;
+  const url = `/api/product?offset=${newPage}`;
   const [total, setTotal] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [list, setList] = useState<IProductItem[]>([]);
