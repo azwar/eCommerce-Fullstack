@@ -8,6 +8,7 @@ import cors from 'cors';
 import {IRequest} from './src/base/IRequest';
 import dotenv from 'dotenv';
 import {initDB} from './src/configs/data-source';
+import {corsOptions} from './src/configs/cors';
 
 dotenv.config();
 
@@ -16,7 +17,7 @@ const port = process.env.PORT;
 
 initDB();
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.get('/', (req: IRequest, res: Response) => {
   res.send('Server is running');
