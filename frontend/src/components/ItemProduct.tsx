@@ -19,7 +19,7 @@ export default function ItemProduct({ data }: { data: IProductItem }): React.JSX
   return (
     <Link href="#">
       <div className="card w-full px-0 rounded-xl shadow-sm shadow-slate-400 bg-white">
-        <h1 className="card-title text-lg px-3 py-2 line-clamp-1">
+        <h1 className="card-title text-lg px-3 py-2 line-clamp-1 text-gray-800">
           {title}
         </h1>
         <div className="avatar">
@@ -32,9 +32,9 @@ export default function ItemProduct({ data }: { data: IProductItem }): React.JSX
           {/* <h2 className="card-title text-sm">
           {data.title}
         </h2> */}
-          <span className="text-lg">${point_price}.00</span>
+          <span className="text-lg text-gray-800">${point_price}.00</span>
           <div className="flex text-sm justify-center items-center">
-            <p className="text-center">by {writer}</p>
+            <p className="text-center text-gray-800">by {writer}</p>
           </div>
           <div className="fle flex-row">
             {tag.map((item, i) => (
