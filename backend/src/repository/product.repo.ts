@@ -1,4 +1,4 @@
-import {dataSource} from '../configs/data-source';
+import {dataSource, getDataSource} from '../configs/data-source';
 import {Product} from '../entity/Product';
 import {DataSource, Repository} from 'typeorm';
 

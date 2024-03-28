@@ -16,7 +16,7 @@ export const dataSource = new DataSource({
   database: process.env.POSTGRESQLDB_DATABASE,
   synchronize: true,
   logging: false,
-  ssl: true,
+  ssl: false,
   entities: [Product, User, OrderItem, Order],
   subscribers: [],
   migrations: [],
@@ -31,6 +31,19 @@ export const initDB = () => {
     .catch(error => {
       console.error('Error connecting to the database:', error);
     });
+
+  return dataSource;
+};
+
+export const getDataSource = async () => {
+  if (!dataSource.isInitialized) {
+    try {
+      await dataSource.initialize();
+      console.log('Connected to the database');
+    } catch (error) {
+      console.error('Error connecting to the database:', error);
+    }
+  }
 
   return dataSource;
 };
